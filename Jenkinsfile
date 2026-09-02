@@ -23,7 +23,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running unit tests (Data Quality checks for the pipeline code)...'
-                sh 'pytest tests/ -v'
+                sh 'python3 -m pytest tests/ -v'
             }
         }
 
